@@ -1,0 +1,25 @@
+Zadanie 1:
+      Jeœli ¿adna z metod nie ma deklaracji „virtual”, wywo³ywane s¹ funkcje zaimplementowane w 
+poszczególnych klasach. Pomimo dziedziczenia z klasy bazowej, dla obiektu klasy pochodnej 
+wykonuje siê metoda zdefiniowana w klasie pochodnej.  Dzieje siê tak, poniewa¿ przes³ania ona 
+funkcjê klasy bazowej (taka sama nazwa, typ, argumenty). 					
+Gdy utworzê wskaŸnik typu klasy bazowej, który bêdzie wskazywaæ na obiekt klasy pochodnej, a 
+nastêpnie wywo³am funkcjê, wykona siê metoda klasy bazowej. Dzieje siê tak, poniewa¿ jedyn¹ 
+informacj¹ o typie obiektu, jest typ wskaŸnika.
+Jeœli metoda w klasie bazowej ma deklaracjê „virtual”, a w klasie pochodnej „override”, to metoda 
+klasy pochodnej przes³ania tê z klasy bazowej. Podkreœla to s³owo override. Gdy utworzê wskaŸnik 
+typu klasy bazowej, który bêdzie wskazywaæ na obiekt klasy pochodnej, a nastêpnie wywo³am 
+funkcjê, wykona siê metoda klasy pochodnej. WskaŸnik na obiekt klasy bazowej wskazuje, co 
+najmniej na obiekt bazowy, ale mo¿e równie¿ wskazywaæ na ka¿dy inny obiekt dziedzicz¹cy po tej 
+klasie.
+Istnieje mo¿liwoœæ stworzenia klasy abstrakcyjnej, której instancji-obiektu nie wolno utworzyæ; taka 
+klasa s³u¿y jedynie do dziedziczenia po niej. Metody w takiej klasie nie musz¹ posiadaæ cia³ – i tak 
+zostan¹ przes³oniête.
+      Jeœli metoda w klasie bazowej ma deklaracjê „final” i „virtual”, a w klasie pochodnej nie ma 
+¿adnej deklaracji, wówczas nastêpujê b³¹d kompilacji. S³owo final oznacza, i¿ po danej 
+klasie/metodzie nie mo¿na dziedziczyæ. Zatem nie jest mo¿liwe wywo³anie funkcji klasy bazowej w 
+obiekcie klasy pochodnej.
+Zadanie 2:
+	Utworzono szablon klas – Pojemnik_na_dwie_dane. Klasa ta mo¿e przechowywaæ dane 
+ró¿nego typu oraz je wyœwietlaæ. Szablon funkcji pomnoz_i_wyswietl pozwala na wykanie operacji 
+mno¿enia danych liczbowych dowolnego typu.
